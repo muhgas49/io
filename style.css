@@ -1,0 +1,2115 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.contianer{
+   
+   display: flex;
+   flex-direction: column;
+   
+    /* background-image: linear-gradient(to top,rgb(141, 164, 207),rgb(169, 180, 189)); */
+    background-color: transparent;
+   
+}
+
+.contianer nav{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.contianer nav .fir{
+display: flex;
+justify-content: space-between;
+align-items: start;
+gap: 30px;
+padding: 16px 0;
+}
+#sell{
+    color: white;
+}
+.contianer nav .fir button{
+    background-color: transparent;
+    color: beige;
+    height: 33px;
+    width: 160px;
+    font-weight: bold;
+    box-shadow: -1.8px 3px 3px orange;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.contianer nav .fir a{
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;  
+}
+.contianer nav .fir a:hover{
+    color: teal;
+}
+.contianer nav .fir button:hover{
+    color: purple;
+    transition: 0.3s linear;
+}
+.contianer nav .fir select{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 28px;
+    padding: 2px;
+}
+.contianer nav .fir select:hover{
+    color: orange;
+    transition: 0.2s linear ;
+}
+.contianer nav .fir select option{
+    color: yellow;
+    background-color: teal;
+    cursor: pointer;
+}
+.contianer nav .two{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px;
+    padding: 4px;
+}
+.contianer nav .two a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 2px 4px purple;
+    font-weight: bold;
+
+}
+
+.contianer nav .two img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    /* filter:blur(1px); */
+    border-radius: 40px;
+    padding: 2px 0;
+}
+.contianer nav .two img:hover{
+transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.contianer nav .two a:hover{
+    text-decoration: underline;
+    
+}   
+
+.contianer nav .two .iconone{
+padding: 12px 0;
+cursor: pointer;
+}
+.contianer nav .two .iconone:hover{
+    transform: rotateY(150deg);
+    transition: 0.5s ease-out;
+    
+}
+.contianer nav .two .icontwo{
+   padding: 12px 0; 
+   cursor: pointer;
+
+}
+
+.contianer nav .two .icontwo:hover{
+    transform: skewX(0deg);
+    animation-name: mo;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes mo{
+    0%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+
+
+.contianer .search{
+    height: 80px;
+    padding: 3px 0;
+    
+    width: 100%;
+    background-color: white;
+}
+
+.contianer .search .int{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 0;
+}
+
+
+.contianer .search .int input{
+    height: 55px;
+    border: 0;
+    outline: 0;
+    
+    width: 50%;
+    background-color: transparent;
+    box-shadow: -4px 2px 4px black;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.contianer .search .int input:focus, .contianer .search .int input:invalid{
+    color: rgb(12, 40, 59);
+    padding: 8px;
+    overflow: scroll;
+    
+}
+.contianer .search .int .butone{
+    position: relative;
+    left: -100px;
+}
+
+.contianer .search .int .butone {
+    width: 150px;
+    height: 51px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+}
+.contianer .search .int .butone:hover{
+    background-image: linear-gradient(to right, purple,black);
+    color: white;   
+    transition: 0.9s ease-in-out;
+}
+.contianer .search .int .buttwo{
+    width: 180px;
+    height: 50px;
+    position: relative;
+    left: -100px;
+    background-color: teal;
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+}
+.contianer .search .int .buttwo:hover{
+        transform: scale(1.08);
+        border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+        transition: 0.4s ease-in;
+        background-color: blue;
+        /* position: relative;
+        left: -70px; */
+}
+.contianer .search .int .buttwo a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.contianer .search .int input::placeholder{
+    padding: 2px;
+}
+
+h1:hover{
+transform: scale(1.3);
+transition: all 0.3s linear;
+}
+.contianer .prodects{
+   
+  display: flex;
+  flex-direction: column;
+
+  gap: 60px;
+    height: 1107px;
+    background-color: transparent;
+    
+}
+
+
+.contianer .prodects .sports{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.81);
+}
+
+
+.contianer .prodects .sports div{
+    height: 540px;
+    width: 390px;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 3px rgb(7, 4, 4) dashed;
+}
+.contianer .prodects .sports .photo1 img{
+width: 250px;
+}
+.contianer .prodects .sports div img{
+    width: 220px;
+    height: 260px;
+    margin:10px 80px;
+}
+.contianer .prodects .sports div img{
+    cursor: pointer;
+    
+}
+.contianer .prodects .sports div img:hover{
+    /* transform: scale(1.2); */
+    transform: rotateY(180deg);
+    transition: 0.8s ease transform;
+}
+
+
+.contianer .prodects .sports div p{
+    color: rgb(5, 6, 95);
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+}
+.contianer .prodects .sports div p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    height: 29px;
+    width: 80px;
+    padding: 4px;
+    font-size: 20px;
+}
+
+
+
+
+.contianer .prodects .sports div p del{
+    
+    height: 30px;
+    width: 60px;
+    padding: 8px;
+    background-color: red;
+
+}
+
+
+
+
+.photo1,.photo2,.photo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.photo1 p,.photo2 p,.photo3 p{
+    font-size: 22px;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+}
+
+
+
+.photo1 a , .photo2 a , .photo3 a{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: black;
+   font-weight: bold;
+    padding: 8px;
+}
+.photo1 a:hover , .photo2 a:hover , .photo3 a:hover{
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.photo3 button{
+    margin: 10px 0px;
+}
+.photo1 button , .photo2 button ,.photo3 button{
+    height: 40px;
+    width: auto;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(53, 51, 51);
+    color: rgb(236, 236, 236);
+    font-size: 18px;
+}
+
+.photo1 button:hover , .photo2 button:hover ,.photo3 button:hover{
+    background-color: rgb(46, 22, 75);
+    box-shadow: 2px 4px 3px rgb(137, 216, 247);
+    transition: 0.5s linear all;
+}
+
+del{
+    background-color: red;
+    padding: 3px;
+}
+
+.contianer .prodects .music{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.81);
+    padding: 6px 1px;
+}
+
+.contianer .prodects .music div{
+    height: 540px;
+    width: 390px;
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 12px;
+    border: 3px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contianer .prodects .music div img{
+    width: 220px;
+    height: 260px;
+    margin:10px 80px;
+    cursor: pointer;
+}
+
+.contianer .buttons button:hover{
+    background-color: transparent;
+    color: yellow;
+}
+.contianer .prodects .music div img:hover{
+    transform: rotateY(180deg);
+    transition: 0.8s ease transform;    
+}
+
+
+.contianer .prodects .music div p{
+    color: rgb(5, 6, 95);
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+
+}
+.contianer .prodects .music div a{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: black;
+   font-weight: bold;
+    padding: 8px;
+}
+
+.contianer .prodects .music div a:hover{
+color: white;
+transition: 0.3s ease-in ;
+}
+
+
+.contianer .prodects .music div button{
+    height: 40px;
+    width: auto;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(53, 51, 51);
+    color: rgb(236, 236, 236);
+    font-size: 18px;        
+}
+
+.contianer .prodects .music div button:hover{
+background-color: rgb(46, 22, 75);
+box-shadow: 2px 4px 3px rgb(137, 216, 247);
+transition: 0.5s linear all;}
+
+
+
+
+.buttons{
+    width: 100%;
+    background-color: rgb(41, 4, 41);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.buttons button{
+   height: auto;
+width: 120px;
+border: 0;
+outline: 0;
+color: rgb(255, 255, 255);
+background-color: transparent;
+font-size: 18px;
+cursor: pointer;
+border-radius: 12px;
+}
+
+
+.buttons button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.4s linear;
+    
+}
+
+h1{
+    color: red;
+    cursor: pointer;
+   padding: 5px;
+   margin-top: 5px;
+}
+
+.rr1,.rr2{
+    transform: translate(150deg,150deg);
+}
+.contianer .prodects .equipment{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 10px; */
+    gap: 40px;
+    
+    justify-content: center;
+     margin-top: 50px; 
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 0px;
+}
+.contianer .prodects .equipment div{
+    height: 540px;
+    width: 300px;
+    padding: 10px 10px;
+
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px rgb(7, 4, 4) dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.contianer .prodects .equipment div img{
+    width: 240px;
+    height: 220px;
+    margin:10px 80px;
+    cursor: pointer;
+}
+.contianer .prodects .equipment div a{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: black;
+   font-weight: bold;
+    padding: 8px;
+}
+.contianer .prodects .equipment div a:hover{
+    color: white;
+    transition: 0.3s linear all;
+}
+.contianer .prodects .equipment div img:hover{
+    transform: rotateY(180deg);
+    transition: 0.8s ease transform;    
+}
+.contianer .prodects .equipment div button{
+    height: 40px;
+    width: auto;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(53, 51, 51);
+    color: rgb(236, 236, 236);
+    font-size: 18px;        
+}
+
+.contianer .prodects .equipment div button:hover{
+background-color: rgb(46, 22, 75);
+box-shadow: 2px 4px 3px rgb(137, 216, 247);
+transition: 0.5s linear all;
+}
+
+.contianer .prodects .equipment div p{
+    color: rgb(5, 6, 95);
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+
+}
+.jo{
+    background-color: rgba(53, 52, 54, 0.548) !important;
+}
+.contianer .prodects .music .img3 del{
+    display: inline;
+}
+@media (min-width:400px) and (max-width:500px) {
+    .contianer .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    .contianer .search .int input{
+        width: 70%;
+        height: 50px;
+    }
+    .contianer .search .int .butone {
+        width: 30%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer .search .int .buttwo {
+        width: 45%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer nav .two{
+        display: none;
+    }
+    .contianer nav .fir {
+        gap: 10px;
+    }
+    .contianer nav .fir select{
+    width: 22%;
+    font-size: 14px;
+    }
+     .contianer nav .fir a{
+        font-size: 12px;
+        width: 20%;
+        margin-top: 2px;
+    }
+    .contianer nav .fir button{
+   width: 20%;
+   font-size: 11px;
+    }
+    .contianer .buttons button {
+        font-size: 15px;
+    }
+    .contianer .buttons button:hover{
+        background-color: transparent;
+        color: yellow;
+    }
+    ::placeholder{
+        color: rgb(24, 100, 90);
+    }
+
+    .contianer .prodects .music {
+        position: relative;
+        top: 15px;
+    }
+    .contianer .prodects .music .img3 .k, .contianer .prodects .music .img3 .kl{
+     margin-top: -14px;
+    }
+
+    .contianer .prodects .buttons {
+        height: 30px;
+    }
+    /* .contianer .prodects .music .img3 p{
+        margin-top: 18px;
+    } */
+     .contianer .prodects .music .img3{
+        gap: 18px;
+     }
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .contianer .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    .contianer .search .int input{
+        width: 70%;
+        height: 50px;
+    }
+    .contianer .search .int .butone {
+        width: 30%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer .search .int .buttwo:hover{
+        background-color: red;
+    }
+    .contianer .search .int .buttwo {
+        width: 45%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer nav .two{
+        display: none;
+    }
+    .contianer nav .fir {
+        gap: 12px;
+    }
+    .contianer nav .fir select{
+    width: 28%;
+    font-size: 12px;
+    }
+    .contianer nav .fir .we{
+        display: none;
+    }
+     .contianer nav .fir a{
+        font-size: 12px;
+        width: 20%;
+        margin-top: 4px;
+        margin-left: -18px;
+    }
+    .contianer nav .fir button{
+   width: 20%;
+   font-size: 10px;
+    }
+    .contianer nav .fir .wee{
+        width: 33%;
+    }
+    .contianer .buttons button {
+        font-size: 17px;
+    }
+    .contianer .buttons button:hover{
+        background-color: transparent;
+        color: yellow;
+    }
+    ::placeholder{
+        color: rgb(36, 8, 139);
+    }
+
+    .contianer .prodects .music {
+        position: relative;
+        top: 10px;
+    }
+    .contianer .prodects .music .img3 .k, .contianer .prodects .music .img3 .kl{
+    margin-top: -12px;
+    }
+
+    .contianer .prodects .buttons {
+        height: 31px;
+    }
+    .contianer .prodects .buttons button {
+        font-size: 14px;
+        
+        margin: 2px;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: 80% ;
+        gap: 2px;
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        height: 230px;
+    } 
+    .contianer .prodects .music .img3{
+        display: flex;
+        height: auto;
+        gap: 15px;
+        transform: scale(0.9);
+    }
+    .contianer .prodects .music .img3 a{
+        margin-top: -12px;
+    }
+    .contianer .prodects .music .img3 button{
+        width: 70%;
+        font-size: 16px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img3 img{
+        height: 230px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: none;
+    }
+    /* .contianer .prodects .music .img3 p{
+        margin-top: 18px;
+    } */
+     
+}
+@media (min-width:200px) and (max-width:300px) {
+    .contianer .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    .contianer .search .int input{
+        width: 70%;
+        height: 38px;
+    }
+    .contianer .search .int .butone {
+        width: 40%;
+        height: 37px;
+        margin-left: 190px;
+        font-size: 18px;
+    }
+    .contianer .search .int .buttwo:hover{
+        background-color: red;
+    }
+    .contianer .search .int .buttwo {
+        width: 45%;
+        height: 40px;
+        margin-left: 190px;
+    }
+    .contianer nav .two{
+        display: none;
+    }
+    .contianer nav .fir {
+        gap: 1px;
+    }
+    .contianer nav .fir select{
+    width: 28%;
+    font-size: 10px;
+    }
+    .contianer nav .fir .we{
+        display: none;
+    }
+     .contianer nav .fir a{
+        font-size: 10px;
+        width: 20%;
+        margin-top: 4px;
+        margin-left: -29px;
+    }
+    .contianer nav .fir button{
+   width: 26%;
+   font-size: 8px;
+    }
+    .contianer nav .fir .wee{
+        width: 33%;
+        box-shadow: -2px 2px 4px green;
+    }
+    .contianer .buttons button {
+        font-size: 17px;
+    }
+    .contianer .buttons button:hover{
+        background-color: transparent;
+        color: yellow;
+    }
+    ::placeholder{
+        color: rgb(36, 8, 139);
+    }
+
+    .contianer .prodects .music {
+        position: relative;
+        top: 10px;
+    }
+    .contianer .prodects .music .img3 .k, .contianer .prodects .music .img3 .kl{
+    margin-top: -12px;
+    }
+
+    .contianer .prodects .buttons {
+        height: 31px;
+        display: flex;
+        gap: 1px;
+    }
+    .contianer .prodects .buttons button {
+        font-size: 10px;
+        
+        margin: 2px;
+    }
+    .contianer .prodects .sports button
+    
+    {
+        font-size: 12px;
+    }
+    
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: 80% ;
+        gap: 2px;
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        height: 160px;
+        width: 80%;
+    } 
+    .contianer .prodects .music .img3{
+        display: flex;
+        height: auto;
+        gap: 15px;
+        transform: scale(0.9);
+    }
+    .contianer .prodects .music .img3 a{
+        margin-top: -12px;
+    }
+    .contianer .prodects .music .img3 button{
+        width: 70%;
+        font-size: 16px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img2 button{
+        width: 70%;
+        font-size: 16px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p,
+    .contianer .prodects .sports p {
+        font-size: 16px;
+    }
+    .contianer .prodects .music .img1 button{
+        width: 70%;
+        font-size: 16px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img3 img{
+        height: 180px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: none;
+    }
+    /* .contianer .prodects .music .img3 p{
+        margin-top: 18px;
+    } */
+}
+
+@media (min-width:150px) and (max-width:200px) {
+    .contianer .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    .contianer .search .int input{
+        width: 70%;
+        height: 30px;
+        font-size: 12px;
+    }
+    .contianer .search .int .butone {
+        width: 40%;
+        height: 30px;
+        margin-left: 190px;
+        font-size: 14px;
+    }
+    .contianer .search .int .buttwo:hover{
+        background-color: red;
+    }
+    .contianer .search .int .buttwo {
+        width: 45%;
+        height: 30px;
+        margin-left: 190px;
+    }
+    .contianer nav .two{
+        display: none;
+    }
+    .contianer nav .fir {
+        gap: 1px;
+    }
+    .contianer nav .fir select{
+    width: 22%;
+    font-size: 10px;
+    display: none;      
+    }
+    .contianer nav .fir .we{
+        display: none;
+    }
+     .contianer nav .fir a{
+        font-size: 10px;
+        width: 20%;
+        margin-top: 4px;
+        margin-left: 0px;
+    }
+    .contianer nav .fir button{
+   width: 26%;
+   font-size: 7px;
+   margin-left: -50px;
+
+    }
+    .contianer nav .fir .wee{
+        width: 33%;
+        box-shadow: -2px 2px 4px green;
+    }
+    .contianer .buttons button {
+        font-size: 17px;
+    }
+    .contianer .buttons button:hover{
+        background-color: transparent;
+        color: yellow;
+    }
+    ::placeholder{
+        color: rgb(36, 8, 139);
+    }
+
+    .contianer .prodects .music {
+        position: relative;
+        top: 10px;
+    }
+    .contianer .prodects .music .img3 .k, .contianer .prodects .music .img3 .kl{
+    margin-top: -12px;
+    }
+
+    .contianer .prodects .buttons {
+        height: 31px;
+        display: flex;
+        gap: 1px;
+    }
+    .contianer .prodects .buttons button {
+        font-size: 12px;
+        
+        margin: 2px;
+    }
+
+    .contianer .prodects .buttons .aqua1,
+    .contianer .prodects .buttons .aqua2{
+        display: none;
+    }
+    .contianer .prodects .sports button
+    
+    {
+        font-size: 12px;
+    }
+    
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: 80% ;
+        gap: 2px;
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        height: 160px;
+        width: 80%;
+    } 
+    .contianer .prodects .music .img3{
+        display: flex;
+        height: auto;
+        gap: 15px;
+        transform: scale(0.9);
+    }
+    .contianer .prodects .music .img3 a{
+        margin-top: -12px;
+    }
+    .contianer .prodects .music .img3 button{
+        width: 70%;
+        font-size: 11px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img2 button{
+        width: 70%;
+        font-size: 11px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p,
+    .contianer .prodects .sports p {
+        font-size: 16px;
+    }
+    .contianer .prodects .music .img1 button{
+        width: 70%;
+        font-size: 11px;
+        height: 60px;
+    }
+    .contianer .prodects .music .img3 img{
+        height: 180px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: none;
+    }
+    /* .contianer .prodects .music .img3 p{
+        margin-top: 18px;
+    } */
+}
+
+@media (min-width:500px) and (max-width:600px) {
+    .contianer .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    .contianer .search .int input{
+        width: 70%;
+        height: 50px;
+    }
+    .contianer .search .int .butone {
+        width: 30%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer .search .int .buttwo:hover{
+        background-color: red;
+    }
+    .contianer .search .int .buttwo {
+        width: 45%;
+        height: 40px;
+        margin-left: 180px;
+    }
+    .contianer nav .two{
+        display: none;
+    }
+    .contianer nav .fir {
+        gap: 10px;
+    }
+    .contianer nav .fir select{
+    width: 22%;
+    font-size: 14px;
+    }
+     .contianer nav .fir a{
+        font-size: 15px;
+        width: 20%;
+        margin-top: 2px;
+    }
+    .contianer nav .fir button{
+   width: 20%;
+   font-size: 12px;
+    }
+    .contianer .buttons button {
+        font-size: 17px;
+    }
+    .contianer .buttons button:hover{
+        background-color: transparent;
+        color: yellow;
+    }
+    ::placeholder{
+        color: rgb(36, 8, 139);
+    }
+
+    .contianer .prodects .music {
+        position: relative;
+        top: 10px;
+    }
+    .contianer .prodects .music .img3 .k, .contianer .prodects .music .img3 .kl{
+     margin-top: -14px;
+    }
+
+    .contianer .prodects .buttons {
+        height: 27px;
+    }
+    /* .contianer .prodects .music .img3 p{
+        margin-top: 18px;
+    } */
+}
+
+
+@media (min-width:600px) and (max-width:700px) {
+    .contianer nav {
+        gap: 2px;
+    }
+    .contianer nav .two {
+        display: none;
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer nav .fir {
+        display: flex;
+        gap: 8px;
+    }
+    .contianer nav .fir select{
+        width: 20%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .contianer .search .int input{
+        width: 80%;
+    }
+    .contianer .search .int .butone{
+        transform: translateX(-10px);
+    }
+    .contianer .search .int .buttwo{
+        width: 50%;
+    }
+    .contianer .prodects .sports, 
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: row;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: calc(100%/3);
+        gap: 2px;
+    
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p
+    {
+        font-size: 16px;
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+    .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 14px;
+    }
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img{
+        height: 180px;
+        width: 80%;
+    }
+    .contianer .prodects .sports,
+    .contianer .prodects .music
+    {
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (min-width:700px) and (max-width:800px) {
+    .contianer nav {
+        gap: 2px;
+    }
+    .contianer nav .two {
+        display: none;
+    }
+    .contianer nav .fir {
+        display: flex;
+        gap: 8px;
+    }
+    .contianer nav .fir select{
+        width: 20%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .contianer .search .int input{
+        width: 80%;
+    }
+    .contianer .search .int .butone{
+        transform: translateX(-10px);
+    }
+    .contianer .search .int .buttwo{
+        width: 50%;
+    }
+    .contianer .prodects .sports, 
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: row;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: calc(100%/3);
+        gap: 2px;
+    
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p
+    {
+        font-size: 16px;
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+    .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 14px;
+    }
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img{
+        height: 180px;
+        width: 80%;
+    }
+    .contianer .prodects .sports,
+    .contianer .prodects .music
+    {
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (min-width:800px) and (max-width:900px) {
+    .contianer nav {
+        gap: 2px;
+    }
+    .contianer nav .two {
+        display: none;
+    }
+    .contianer nav .fir {
+        display: flex;
+        gap: 8px;
+    }
+    .contianer nav .fir select{
+        width: 20%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .contianer .search .int input{
+        width: 80%;
+    }
+    .contianer .search .int .butone{
+        transform: translateX(-10px);
+    }
+    .contianer .search .int .buttwo{
+        width: 50%;
+    }
+    .contianer .prodects .sports, 
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: row;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: calc(100%/3);
+        gap: 2px;
+    
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p
+    {
+        font-size: 16px;
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+    .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 14px;
+    }
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img{
+        height: 200px;
+        width: 80%;
+    }
+    .contianer .prodects .sports,
+    .contianer .prodects .music
+    {
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1000px) {
+    .contianer nav {
+        gap: 2px;
+    }
+    .contianer nav .two {
+        display: none;
+    }
+    .contianer nav .fir {
+        display: flex;
+        gap: 33px;
+    }
+    .contianer nav .fir select{
+        width: 40%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .contianer .search .int input{
+        width: 80%;
+    }
+    .contianer .search .int .butone{
+        transform: translateX(-10px);
+    }
+    .contianer .search .int .buttwo{
+        width: 50%;
+    }
+    .contianer .prodects .sports, 
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: row;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: calc(100%/3);
+        gap: 2px;
+    
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p
+    {
+        font-size: 25px;
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+    .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 14px;
+    }
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img{
+        height: 220px;
+        width: 80%;
+    }
+    .contianer .prodects .sports,
+    .contianer .prodects .music
+    {
+        position: relative;
+        left: -20px;
+    }
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3{
+        gap: 12px;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1107px) {
+    .contianer nav {
+        gap: 2px;
+    }
+    .contianer nav .two {
+        display: none;
+    }
+    .contianer nav .fir {
+        display: flex;
+        gap: 33px;
+    }
+    .contianer nav .fir select{
+        width: 40%;
+    }
+    .contianer .search .int{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .contianer .search .int input{
+        width: 80%;
+    }
+    .contianer .search .int .butone{
+        transform: translateX(-10px);
+    }
+    .contianer .search .int .buttwo{
+        width: 50%;
+    }
+    .contianer .prodects .sports, 
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+        width: calc(100%/3);
+        gap: 2px;
+    
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p
+    {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+    .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img{
+        height: 280px;
+        width: 80%;
+    }
+    .contianer .prodects .sports,
+    .contianer .prodects .music
+    {
+        position: relative;
+        left: -20px;
+    }
+    .contianer .prodects .music .img1,
+    .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3{
+        gap: 12px;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1107px) {
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+
+    .contianer .prodects .equipment .drei
+    {
+        width: calc(100%/4);
+        gap: 0px;
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button
+     {
+        width: 80%;
+        font-size: 15px;
+
+    }
+    .contianer .prodects .equipment .ince {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+    .contianer .prodects .equipment .ince p{
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince .kp{
+        margin-top: -6px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1000px) {
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+
+    .contianer .prodects .equipment .drei
+    {
+        width: calc(100%/4);
+        gap: 0px;
+        
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button
+     {
+        width: 80%;
+        font-size: 15px;
+
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai .img,
+    .contianer .prodects .equipment .drei img{
+        height: 200px;
+        width: 170px;
+    }
+    .contianer .prodects .equipment .ince {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p
+    {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince .kp{
+        margin-top: -6px;
+    }
+}
+@media (min-width:800px) and (max-width:900px) {
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+
+    .contianer .prodects .equipment .drei
+    {
+        width: calc(100%/4);
+        gap: 0px;
+        
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button
+     {
+        width: 80%;
+        font-size: 13px;
+         font-weight: bold;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img{
+        height: 200px;
+        width: 170px;
+    }
+    .contianer .prodects .equipment .ince {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+    .contianer .prodects .equipment .zwai img{
+        width: 200px;
+        height: 200px;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p
+    {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince .kp{
+        margin-top: -6px;
+    }
+}
+@media (min-width:700px) and (max-width:800px) {
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+
+    .contianer .prodects .equipment .drei
+    {
+        width: 24%;
+        gap: 0px;
+        
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button
+     {
+        width: 80%;
+        font-size: 13px;
+         font-weight: bold;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img{
+        height: 180px;
+        width: 160px;
+    }
+    .contianer .prodects .equipment .ince {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+    .contianer .prodects .equipment .zwai img{
+        width: 200px;
+        height: 200px;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p
+    {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince .kp{
+        margin-top: -6px;
+    }
+}
+@media (min-width:600px) and (max-width:700px) {
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+
+    .contianer .prodects .equipment .drei
+    {
+        width: 24%;
+        gap: 1px;
+        
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button
+     {
+        width: 80%;
+        font-size: 13px;
+         font-weight: bold;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img{
+        height: 150px;
+        width: 120px;
+    }
+    .contianer .prodects .equipment .ince {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+    .contianer .prodects .equipment .zwai img{
+        width: 150px;
+        height: 160px;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p
+    {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince .kp{
+        margin-top: -6px;
+    }
+}
+
+@media (min-width:500px) and (max-width:600px){
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+    .contianer .prodects .music .img3{
+        gap: 19px;
+    }
+}
+@media (min-width:400px) and (max-width:500px){
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+}
+
+@media (min-width:300px) and (max-width:400px){
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+    
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+    .contianer .prodects .equipment .drei {
+        width: 80%;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img {
+        height: 150px;
+        width: 160px;
+    }
+    .contianer .prodects .music .img3{
+        width: 91%;
+        margin-left: -13px;
+    }
+    .contianer .prodects .buttons .rent{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .contianer .prodects .buttons .rent:hover{
+        color: red;
+        transition: all 0.2s linear;
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button {
+        width: 80%;
+        font-size: 15px;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince a,
+    .contianer .prodects .equipment .zwai a,
+    .contianer .prodects .equipment .drei a {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .contianer .prodects .buttons{
+        height: 44px;
+    }
+    .contianer .prodects .buttons .jo{
+        color: gold;
+    }
+} 
+   
+
+@media (min-width:250px) and (max-width:300px){
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+    .contianer .prodects .equipment .drei {
+        width: 80%;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img {
+        height: 150px;
+        width: 160px;
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button {
+        width: 80%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince a,
+    .contianer .prodects .equipment .zwai a,
+    .contianer .prodects .equipment .drei a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .contianer .prodects .buttons{
+        height: 44px;
+    }
+    .contianer .prodects .buttons .jo{
+        color: gold;
+    }
+} 
+
+
+@media (min-width:200px) and (max-width:250px){
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+    .contianer .prodects .equipment .drei {
+        width: 80%;
+        text-align: center;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img {
+        height: 140px;
+        width: 130px;
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button {
+        width: 80%;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p {
+        font-size: 20px;
+    }
+    .contianer .prodects .equipment .ince a,
+    .contianer .prodects .equipment .zwai a,
+    .contianer .prodects .equipment .drei a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .contianer .prodects .buttons{
+        height: 44px;
+    }
+    .contianer .prodects .buttons .jo{
+        color: gold;
+    }
+} 
+@media (min-width:150px) and (max-width:200px) {
+    .contianer .prodects .equipment {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contianer .prodects{
+        gap: 50px;
+       
+    }
+    .contianer .prodects .music .img3 del{
+        display: inline;
+    }
+    .contianer .prodects .equipment .ince,
+    .contianer .prodects .equipment .zwai,
+    .contianer .prodects .equipment .drei {
+        width: 80%;
+        text-align: center;
+    }
+    .contianer .prodects .equipment .ince img,
+    .contianer .prodects .equipment .zwai img,
+    .contianer .prodects .equipment .drei img {
+        height: 120px;
+        width: 100px;
+    }
+    .contianer .prodects .equipment .ince button,
+    .contianer .prodects .equipment .zwai button,
+    .contianer .prodects .equipment .drei button {
+        width: 80%;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    
+    .contianer .prodects .equipment .ince p,
+    .contianer .prodects .equipment .zwai p,
+    .contianer .prodects .equipment .drei p {
+        font-size: 15px;
+    }
+    .contianer .prodects .equipment .ince a,
+    .contianer .prodects .equipment .zwai a,
+    .contianer .prodects .equipment .drei a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .contianer .prodects .buttons{
+        height: 44px;
+    }
+    .contianer .prodects .buttons .jo{
+        color: gold;
+    }
+    .contianer .prodects .buttons button{
+     font-size: 10px;
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports  .photo3 p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+
+.contianer .prodects .sports div,
+.contianer .prodects .music div,
+.contianer .prodects .equipment div
+ {
+    border: 4px dashed black;
+}
